@@ -129,3 +129,72 @@ table {
     position: relative;
     top: -1.5px;
 }
+
+#logo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 56px;
+    margin: 44px auto 26px;
+    font-weight: 600;
+}
+
+#logo span {
+    margin-left: -1px;
+}
+
+#g {
+    color: #4285F4;
+}
+
+#o1 {
+    color: #EA4335;
+}
+
+#o2 {
+    color: #FBBC05;
+}
+
+#g-l {
+    color: #4285F4;
+}
+
+#l {
+    color: #34A853;
+}
+
+#e {
+    color: #EA4335;
+}
+
+#searchbar {
+    display: flex;
+    border: 1px solid #dadce0;
+    border-radius: 20px;
+    justify-content: center;
+    margin: 8px 16px;
+}
+
+#sIcon {
+    padding: 0 12px;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+#id {
+    border: none;
+}
+
+#searchbar textarea{
+    flex: 1;
+}
+
+#searchbar button{
+    border: none;
+    background-color: transparent;
+    padding: 0 12px;
+}
