@@ -50,11 +50,14 @@ table {
 :root{
     --active-option: #0b57d0;
     --light-border: #dadce0;
+    --text-dark-grey: #5e5e5e;
+    --footer-background: #f2f2f2;
+    --text-light-grey: #70757a;
 }
 
 #header{
     display: flex;
-    color: #5e5e5e;
+    color: var(--text-dark-grey);
     font-size: 12px;
     line-height: 48px;
     font-weight: 600;
@@ -299,3 +302,59 @@ padding-top: 20px;
     height: 40px;
     width: 40px;
 }
+
+footer{
+    background-color: var(--footer-background);
+}
+
+footer #country{
+    font-size: 16px;
+    color: var(--text-dark-grey);
+    text-align: left;
+    margin-right: 12px;
+    padding-left: 12px;
+    line-height: 35px;
+    border-bottom: 1px solid transparent;
+
+}
+
+footer #settings{
+    border-top: 1px solid var(--light-border);
+    line-height: 35px;
+    text-align: center;
+    font-size: 13px;
+    padding: 10px 0;
+    margin-left: -27px;
+}
+
+footer #settings #theme {
+    padding-left: 27px;
+}
+
+footer #settings a{
+    padding-left: 24px;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 35px;
+    text-align: center;
+    font-weight: 400;
+    color: var(--text-light-grey);
+}
+
+#campaign{
+    background-color: var(--footer-background);
+    text-align: center;
+    margin-left: -24px;
+    margin-top: -10px;
+    padding-bottom: 10px;
+}
+
+#campaign a{
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 35px;
+    color: var(--text-light-grey);
+    text-align: center;
+    padding-left: 24px;
+}
+
