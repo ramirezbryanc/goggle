@@ -375,3 +375,58 @@ footer #settings a{
     padding-left: 24px;
 }
 
+@media only screen and (width: 768px) and (height: 1024px), 
+       only screen and (width: 1024px) and (height: 768px) {
+        
+        #header{
+            margin-top: -1px;
+        }
+
+        #header-options a{
+            font-size: 12px;
+        }
+
+        #sign-in{
+            width: 85px;
+        }
+
+        #sign-in span{
+            top: -2.5px;
+        }
+
+        #hero{
+            margin: 0;
+        }
+
+        #logo{
+            width: 272px;
+            height: 108px;
+            margin: 142px auto 23px;
+        }
+
+        #logo span{
+            font-size: 86px;
+            font-weight: 450;
+        }
+
+        #searchbar-wrapper{
+            display: flex;
+            justify-content: center;
+        }
+
+        #searchbar{
+            flex-grow: 1;
+            margin: 0 24px;
+            max-width: 718px;
+        }
+
+        #languages{
+            margin-top: 28px;
+            line-height: 28px;
+        }
+
+        #trends{
+            margin-top: 24px;
+            line-height: 28px;
+        }
+}
