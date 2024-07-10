@@ -30,6 +30,7 @@ footer, header, hgroup, menu, nav, section {
 
 html {
     height: 100%;
+    max-height: 100%;
 }
 
 body {
@@ -60,6 +61,7 @@ table {
     --text-dark-grey: #5e5e5e;
     --footer-background: #f2f2f2;
     --text-light-grey: #70757a;
+    --text-black: #1f1f1f;
 }
 
 #main {
@@ -70,6 +72,10 @@ table {
 
 #outer {
     flex: 1;
+}
+
+#header-user-menu .link{
+    display: none;
 }
 
 #header{
@@ -215,6 +221,9 @@ padding-top: 20px;
 #searchbar button {
     display: flex;
     align-items: center;
+    border: none;
+    background-color: transparent;
+    padding: 0 12px;
 }
 
 #id {
@@ -225,10 +234,8 @@ padding-top: 20px;
     flex: 1;
 }
 
-#searchbar button{
-    border: none;
-    background-color: transparent;
-    padding: 0 12px;
+#search-buttons{
+    display: none;
 }
 
 #languages{
@@ -300,7 +307,7 @@ padding-top: 20px;
 }
 
 #trends a div .sItem{
-    color: #1f1f1f;
+    color: var(--text-black);
 }
 
 #trends a div .category{
@@ -375,6 +382,21 @@ footer #settings a{
     padding-left: 24px;
 }
 
+@media only screen and (min-width: 768px){
+
+    #searchbar-wrapper{
+        display: flex;
+        justify-content: center;
+    }
+
+    #searchbar{
+        flex-grow: 1;
+        margin: 0 24px;
+        max-width: 718px;
+    }
+
+}
+
 @media only screen and (width: 768px) and (height: 1024px), 
        only screen and (width: 1024px) and (height: 768px) {
         
@@ -409,17 +431,6 @@ footer #settings a{
             font-weight: 450;
         }
 
-        #searchbar-wrapper{
-            display: flex;
-            justify-content: center;
-        }
-
-        #searchbar{
-            flex-grow: 1;
-            margin: 0 24px;
-            max-width: 718px;
-        }
-
         #languages{
             margin-top: 28px;
             line-height: 28px;
@@ -429,4 +440,120 @@ footer #settings a{
             margin-top: 24px;
             line-height: 28px;
         }
+}
+
+@media only screen and (min-width: 820px){
+
+    #header-hamburger, #header-options, #trends {
+        display: none;
+    }
+
+    #header{
+        padding: 6px;
+    }
+
+    #header-user-menu .link{
+        display: block;
+        color: var(--text-black);
+        font-weight: 400;
+        padding-left: 15px;
+        text-transform: none;
+    }
+
+    #header-user-menu .link.pr{
+        padding-right: 15px;
+    }
+
+    #sign-in {
+        width: 85px;
+    }
+
+    #hero{
+        margin-top: 198px;
+        padding: 0;
+        margin-bottom: 42px;
+    }
+
+    #logo{
+        font-size: 80px;
+    }
+
+
+    #searchbar-wrapper{
+        padding: 20px;
+    }
+
+    #searchbar{
+        flex-grow: 1;
+        margin: 0 24px;
+        max-width: 582px;
+        height: 46px;
+        border-radius: 24px;
+    }
+
+    #search-buttons{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    #search-buttons button{
+        display: block;
+        margin: 0 4px;
+        padding: 0 16px;
+        border: 1px solid #f8f9fa;
+        line-height: 27px;
+        font-size: 14px;
+        font-weight: 400;
+        height: 36px;
+        color: #3c4043;
+        background-color: #f8f9fa;
+    }
+
+    #settings, #campaign{
+        display: none;
+    }
+
+    #tabletsUp{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    footer #country{
+        padding: 15px 30px;
+        border-bottom: 1px solid var(--light-border);
+        font-size: 15px;
+        height: 17px;
+        color: #202124;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    #tabletsUp div{
+        display: flex;
+    }
+
+    #tabletsUp a{
+        padding: 15px;
+        display: block;
+        white-space: nowrap;
+        text-decoration: none;
+        font-size: 14px;
+        color: #202124;
+        text-decoration-style: solid;
+    }
+}
+
+@media only screen and (width: 820px) and (height: 1180px) {
+
+    #header-hamburger, #header-options, #trends {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1201px) {
+    #tabletsUp{
+        justify-content: space-between;
+        padding: 0 20px;
+    }
 }
