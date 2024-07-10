@@ -365,6 +365,10 @@ footer #settings a{
     color: var(--text-light-grey);
 }
 
+#tabletsUp{
+    display: none;
+}
+
 #campaign{
     background-color: var(--footer-background);
     text-align: center;
